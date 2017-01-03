@@ -1,0 +1,250 @@
+/************************************************************/
+/* Common styles */
+/************************************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Sans-Serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  color: #585853;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+#content {
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+  min-height: 100vh;
+}
+header {
+  word-wrap: break-word;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+.contact,
+.copyright {
+  font-size: 12px;
+  line-height: 14px;
+}
+nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  max-width: 250px;
+  text-align: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em 0 0 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+nav li {
+  display: inline;
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+nav a {
+  display: inline-block;
+  text-align: center;
+}
+nav .key {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: none;
+}
+/************************************************************/
+/* Index page */
+/************************************************************/
+body.index header {
+  padding: 20px 0;
+}
+body.index header h1 {
+  font-size: 96px;
+  line-height: 0.8em;
+  text-indent: -0.06em;
+  letter-spacing: -0.05em;
+  color: #b8b7b3;
+}
+body.index header h2 {
+  font-size: 36px;
+  line-height: 1em;
+  text-indent: -0.06em;
+}
+body.index ul.themes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.index ul.themes li {
+  clear: both;
+  margin: 0;
+  padding: 70px 0 0 0;
+}
+body.index .theme {
+  float: left;
+  display: block;
+}
+body.index .theme span {
+  display: block;
+}
+body.index .theme .code {
+  font-size: 72px;
+  line-height: 0.9em;
+  font-weight: 700;
+  text-indent: -3px;
+  color: #b8b7b3;
+  letter-spacing: -0.05em;
+}
+body.index .theme .name {
+  font-size: 22px;
+  line-height: 1em;
+  font-weight: 400;
+}
+body.index img {
+  float: right;
+  width: 700px;
+  height: auto;
+}
+body.index footer {
+  clear: both;
+  padding: 60px 0 0 0;
+  height: 100px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+/************************************************************/
+/* Photo page view */
+/************************************************************/
+.photo-page #content {
+  margin-top: 8px;
+}
+.photo-page header {
+  float: right;
+  text-align: right;
+}
+.photo-page header h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: #b8b7b3;
+}
+.photo-page header h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-indent: -0.06em;
+  color: #585853;
+}
+.photo-page header h3 .code {
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+.photo-page article {
+  padding-bottom: 100px;
+}
+.photo-page article h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-indent: -0.06em;
+}
+.photo-page article h1 .code,
+.photo-page article h1 .title {
+  display: block;
+}
+.photo-page article h1 .code {
+  letter-spacing: -0.05em;
+}
+.photo-page article h1 .title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+.photo-page figure {
+  clear: both;
+  margin: 10px 0 0 0;
+}
+.photo-page figure img {
+  display: block;
+}
+.photo-page figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  margin-right: 250px;
+}
+.photo-page figcaption .info {
+  padding: 1em 0 0 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+/************************************************************/
+/* Simple responsive breakdown */
+/************************************************************/
+@media screen and (max-width: 1024px) {
+  #content {
+    margin: 0 12px;
+    width: auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .photo-page header {
+    float: none;
+    text-align: left;
+  }
+  .photo-page figcaption {
+    position: static;
+    margin-right: 0;
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  nav ul {
+    padding: 1em 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  body.index .theme {
+    float: none;
+  }
+  body.index img {
+    float: none;
+  }
+}
