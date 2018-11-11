@@ -203,6 +203,55 @@ body.index footer {
   font-weight: 500;
 }
 /************************************************************/
+/* Sitemap page */
+/************************************************************/
+.sitemap header {
+  padding: 20px 0;
+}
+.sitemap header h2 {
+  font-size: 96px;
+  line-height: 0.8em;
+  text-indent: -0.06em;
+  letter-spacing: -0.05em;
+  color: #b8b7b3;
+}
+.sitemap header h3 {
+  font-size: 36px;
+  line-height: 1em;
+  text-indent: -0.06em;
+}
+.sitemap h1 {
+  font-size: 36px;
+  line-height: 1em;
+  text-indent: -0.06em;
+}
+.sitemap h1 + ul {
+  margin-top: 20px;
+}
+.sitemap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sitemap li {
+  margin: 0;
+  padding: 0;
+}
+.sitemap li li {
+  padding-left: 1em;
+}
+.sitemap .code {
+  color: #b8b7b3;
+}
+.sitemap footer {
+  clear: both;
+  padding: 60px 0 0 0;
+  height: 100px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+/************************************************************/
 /* Simple responsive breakdown */
 /************************************************************/
 @media screen and (max-width: 1024px) {
